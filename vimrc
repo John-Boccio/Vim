@@ -109,5 +109,5 @@ endfunction
 au BufEnter /* call LoadCscope()
 
 " Set color scheme to desert
-:colorscheme desertink
+:colorscheme spacecamp
 
