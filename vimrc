@@ -13,7 +13,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Autocomplete
-Plug 'ajh17/VimCompletesMe'
+Plug 'ycm-core/YouCompleteMe'
 " Syntax linting
 Plug 'vim-syntastic/syntastic'
 
@@ -42,17 +42,27 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set undofile " Maintain undo history between sessions
 set undodir=~/.vim/undodir
 
+" Use UTF-8 encoding
+ set encoding=utf-8
+
+" Have line across current cursor row
+set cursorline
+
+" Allow mouse use
+set mouse=a
+
 " Always have 5 lines above or below the cursor
 set scrolloff=5
 
 " Set amount of spaces per tab
 " set expandtab " Use spaces instead of tabs
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
-" Set ignore case and use smart case for searching
+" Set ignore case and use smart case for searching, highlight searches
 set ignorecase
 set smartcase
+set hlsearch
 
 " Show matching pair for [], {}, ()
 set showmatch
